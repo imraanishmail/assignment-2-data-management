@@ -18,7 +18,6 @@ import java.util.Date;
 @NamedQuery(name = "Inventory.findAll", query = "SELECT i FROM Inventory i")
 @NamedQuery(name = "Inventory.getByName", query = "SELECT i from Inventory i WHERE i.name = :name")
 @NamedQuery(name = "Inventory.clearAll", query = "DELETE FROM Inventory")
-
 // Serializable converts objects into bytes (Marker interface and will passivate bean)
 public class Inventory implements Comparable<Inventory>, Serializable {
 

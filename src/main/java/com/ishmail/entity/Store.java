@@ -8,10 +8,10 @@ import javax.persistence.*;
 import java.io.Serializable;
 import java.util.List;
 
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
-@Entity
+@Data // generates getters and setters and toString method
+@AllArgsConstructor // generates a parameterized constructor for all fields in the class
+@NoArgsConstructor // generates a default constructor
+@Entity // specifies that this class is a table
 public class Store implements Serializable {
 
     @Id
